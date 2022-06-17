@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:viewBindingIgnore="false">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraints"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <ImageButton
+                android:id="@+id/ohyaimagebutton"
+                android:layout_width="128dp"
+                android:layout_height="128dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:scaleType="centerCrop"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/shinyaimagebutton"
+                app:srcCompat="@drawable/ohyaconfidantimage" />
+
+            <ImageButton
+                android:id="@+id/chihayaimagebutton"
+                android:layout_width="128dp"
+                android:layout_height="128dp"
+                android:layout_marginTop="16dp"
+                android:scaleType="centerCrop"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/hifumiimagebutton"
+                app:layout_constraintTop_toBottomOf="@+id/yoshidaimagebutton"
+                app:srcCompat="@drawable/chihayaconfidantimage" />
+
+            <ImageButton
+                android:id="@+id/shinyaimagebutton"
+                android:layout_width="128dp"
+                android:layout_height="128dp"
+                android:layout_marginTop="16dp"
+                android:scaleType="centerCrop"
+                app:layout_constraintEnd_toStartOf="@+id/hifumiimagebutton"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/kawakamiimagebutton"
+                app:srcCompat="@drawable/shinyaconfidantimage" />
+
+            <ImageButton
+                android:id="@+id/hifumiimagebutton"
+                android:layout_width="128dp"
+                android:layout_height="128dp"
+                android:layout_marginTop="16dp"
+                android:scaleType="centerCrop"
+                app:layout_constraintEnd_toStartOf="@+id/chihayaimagebutton"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/shinyaimagebutton"
+                app:layout_constraintTop_toBottomOf="@+id/iwaiimagebutton"
+                app:srcCompat="@drawable/hifumiconfidantimage" />
+
+            <ImageButton
+                android:id="@+id/yoshidaimagebutton"
+                android:layout_width="128dp"
+                android:layout_height="128dp"
+                android:layout_marginTop="16dp"
+                android:scaleType="centerCrop"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/iwaiimagebutton"
+                app:layout_constraintTop_toBottomOf="@+id/marukiimagebutton"
+                app:srcCompat="@drawable/yoshidaconfidantimage" />
+
+            <ImageButton
+                android:id="@+id/iwaiimagebutton"
+                android:layout_width="128dp"
+                android:layout_height="128dp"
+                android:layout_marginTop="16dp"
+                android:scaleType="centerCrop"
+                app:layout_constraintEnd_toStartOf="@+id/yoshidaimagebutton"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/kawakamiimagebutton"
+                app:layout_constraintTop_toBottomOf="@+id/mishimaimagebutton"
+                app:srcCompat="@drawable/iwaiconfidantimage" />
+
+            <ImageButton
+                android:id="@+id/kawakamiimagebutton"
+                android:layout_width="128dp"
+                android:layout_height="128dp"
+                android:layout_marginTop="16dp"
+                android:scaleType="centerCrop"
+                app:layout_constraintEnd_toStartOf="@+id/iwaiimagebutton"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/takemiimagebutton"
+                app:srcCompat="@drawable/kawakamiconfidantimage" />
+
+            <ImageButton
+                android:id="@+id/mishimaimagebutton"
+                android:layout_width="128dp"
+                android:layout_height="128dp"
+                android:layout_marginTop="16dp"
+                android:scaleType="centerCrop"
+                app:layout_constraintEnd_toStartOf="@+id/marukiimagebutton"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/takemiimagebutton"
+                app:layout_constraintTop_toBottomOf="@+id/kasumiimagebutton"
+                app:srcCompat="@drawable/mishimaconfidantimage" />
+
+            <ImageButton
+                android:id="@+id/marukiimagebutton"
+                android:layout_width="128dp"
+                android:layout_height="128dp"
+                android:layout_marginTop="16dp"
+                android:scaleType="centerCrop"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/mishimaimagebutton"
+                app:layout_constraintTop_toBottomOf="@+id/sojiroimagebutton"
+                app:srcCompat="@drawable/marukiconfidantimage" />
+
+            <ImageButton
+                android:id="@+id/takemiimagebutton"
+                android:layout_width="128dp"
+                android:layout_height="128dp"
+                android:layout_marginTop="16dp"
+                android:scaleType="centerCrop"
+                app:layout_constraintEnd_toStartOf="@+id/mishimaimagebutton"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/akechiimagebutton"
+                app:srcCompat="@drawable/takemiconfidantimage" />
+
+            <ImageButton
+                android:id="@+id/kasumiimagebutton"
+                android:layout_width="128dp"
+                android:layout_height="128dp"
+                android:layout_marginTop="16dp"
+                android:scaleType="centerCrop"
+                app:layout_constraintEnd_toStartOf="@+id/sojiroimagebutton"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/akechiimagebutton"
+                app:layout_constraintTop_toBottomOf="@+id/futabaimagebutton"
+                app:srcCompat="@drawable/kasumiconfidantimage" />
+
+            <ImageButton
+                android:id="@+id/sojiroimagebutton"
+                android:layout_width="128dp"
+                android:layout_height="128dp"
+                android:layout_marginTop="16dp"
+                android:scaleType="centerCrop"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/kasumiimagebutton"
+                app:layout_constraintTop_toBottomOf="@+id/haruimagebutton"
+                app:srcCompat="@drawable/sojiroconfidantimage" />
+
+            <ImageButton
+                android:id="@+id/akechiimagebutton"
+                android:layout_width="128dp"
+                android:layout_height="128dp"
+                android:layout_marginTop="16dp"
+                android:scaleType="centerCrop"
+                app:layout_constraintEnd_toStartOf="@+id/kasumiimagebutton"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/makotoimagebutton"
+                app:srcCompat="@drawable/akechiconfidantimage" />
+
+            <ImageButton
+                android:id="@+id/haruimagebutton"
+                android:layout_width="128dp"
+                android:layout_height="128dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="12dp"
+                android:scaleType="fitCenter"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/yusukeimagebutton"
+                app:srcCompat="@drawable/haruconfidantimage" />
+
+            <ImageButton
+                android:id="@+id/futabaimagebutton"
+                android:layout_width="128dp"
+                android:layout_height="128dp"
+                android:layout_marginTop="16dp"
+                android:scaleType="fitCenter"
+                app:layout_constraintEnd_toStartOf="@+id/haruimagebutton"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/makotoimagebutton"
+                app:layout_constraintTop_toBottomOf="@+id/annimagebutton"
+                app:srcCompat="@drawable/futabaconfidantimage" />
+
+            <ImageButton
+                android:id="@+id/makotoimagebutton"
+                android:layout_width="128dp"
+                android:layout_height="128dp"
+                android:layout_marginTop="16dp"
+                android:scaleType="fitCenter"
+                app:layout_constraintEnd_toStartOf="@+id/futabaimagebutton"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ryujiimagebutton"
+                app:srcCompat="@drawable/makotoconfidantimage" />
+
+            <ImageButton
+                android:id="@+id/yusukeimagebutton"
+                android:layout_width="128dp"
+                android:layout_height="128dp"
+                android:layout_marginTop="64dp"
+                android:scaleType="fitCenter"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/annimagebutton"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/yusukeconfidantimage" />
+
+            <ImageButton
+                android:id="@+id/annimagebutton"
+                android:layout_width="128dp"
+                android:layout_height="128dp"
+                android:layout_marginTop="64dp"
+                android:scaleType="fitCenter"
+                app:layout_constraintEnd_toStartOf="@+id/yusukeimagebutton"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/ryujiimagebutton"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/annconfidantimage" />
+
+            <Spinner
+                android:id="@+id/hangoutspinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:textAlignment="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageButton
+                android:id="@+id/ryujiimagebutton"
+                android:layout_width="128dp"
+                android:layout_height="128dp"
+                android:layout_marginTop="64dp"
+                android:scaleType="fitCenter"
+                app:layout_constraintEnd_toStartOf="@+id/annimagebutton"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ryujiconfidantimage" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
